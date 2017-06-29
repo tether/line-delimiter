@@ -8,7 +8,10 @@ const stringify = require('json-stringify-safe')
 
 
 /**
+ * Serialize data and add line break.
  *
+ * @return {Stream}
+ * @api public
  */
 
 module.exports = (opts) => {
