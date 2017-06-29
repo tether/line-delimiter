@@ -1,0 +1,25 @@
+{
+  "name": "line-delimiter",
+  "version": "1.0.0",
+  "description": "Line delimiter transform stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tether/line-delimiter.git"
+  },
+  "keywords": [
+    "line",
+    "delimiter",
+    "json",
+    "stringify"
+  ],
+  "author": "Olvier <olivier.wietrich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tether/line-delimiter/issues"
+  },
+  "homepage": "https://github.com/tether/line-delimiter#readme"
+}
