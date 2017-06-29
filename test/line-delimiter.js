@@ -15,7 +15,7 @@ test('should be a duplex stream', assert => {
 })
 
 
-test('should add line delimiter to chunks od strings', assert => {
+test('should add line delimiter to chunks of strings', assert => {
   assert.plan(1)
   const stream = transform()
   stream.pipe(concat(str => {
@@ -23,5 +23,20 @@ test('should add line delimiter to chunks od strings', assert => {
   }))
   stream.write('hello')
   stream.write('world')
+  stream.end()
+})
+
+test('should add line delimiter to chunks of objects', assert => {
+  assert.plan(1)
+  const stream = transform()
+  stream.pipe(concat(str => {
+    assert.equal(str, `{"name":"hello"}\n{"foo":"bar"}\n`)
+  }))
+  stream.write({
+    name: 'hello'
+  })
+  stream.write({
+    foo: 'bar'
+  })
   stream.end()
 })
