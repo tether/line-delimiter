@@ -26,6 +26,7 @@
     "tape": "^4.7.0"
   },
   "dependencies": {
-    "json-stringify-safe": "^5.0.1"
+    "json-stringify-safe": "^5.0.1",
+    "through2": "^2.0.3"
   }
 }
