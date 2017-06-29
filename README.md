@@ -15,7 +15,7 @@ const transform = require('line-delimiter')
 source.pipe(transform()).pipe(dest)
 ```
 
-This module safely serialize objects into JSON strings and avoid circular dependencies.
+This module safely serialize data into JSON strings and avoid circular dependencies.
 
 ## Installation
 
