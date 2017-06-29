@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/tether/line-delimiter#readme",
   "devDependencies": {
+    "concat-stream": "^1.6.0",
     "tape": "^4.7.0"
   },
   "dependencies": {
