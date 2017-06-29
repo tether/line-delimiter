@@ -24,5 +24,8 @@
   "homepage": "https://github.com/tether/line-delimiter#readme",
   "devDependencies": {
     "tape": "^4.7.0"
+  },
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1"
   }
 }
