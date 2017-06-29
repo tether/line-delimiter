@@ -10,8 +10,8 @@ const stringify = require('json-stringify-safe')
 /**
  *
  */
- 
-module.exports = () => {
+
+module.exports = (opts) => {
   return through.obj(opts, function(obj, enc, cb) {
     cb(null, stringify(obj) + EOL)
   })
